@@ -1,3 +1,13 @@
+"""
+Order of key application:
+Key 1 -- profile name
+Key 2 -- directory in which tables need to be created
+Key 3 -- path to the YQL script
+
+The directory will be created even if it does not exist. 
+The line containing PRAGMA TablePathPrefix will be inserted into the file if it's not there, or modified if it is.
+"""
+
 import os
 import sys
 import subprocess
